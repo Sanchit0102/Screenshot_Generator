@@ -1,6 +1,7 @@
 import datetime
 
 from pyrogram import filters
+from pyrogram import client 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from ..utils import Utilities
@@ -10,7 +11,7 @@ from ..config import Config
 
 @ScreenShotBot.on_message(
     filters.private
-    & ((filters.text & on_edited_message()) | filters.media)
+    & ((filters.text & pyrogram.Client.on_edited_message) | filters.media)
     & filters.incoming
 )
 async def _(c, m):
