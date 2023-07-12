@@ -11,7 +11,7 @@ from ..config import Config
 
 @ScreenShotBot.on_message(
     filters.private
-    & ((filters.text & Client.on_edited_message) | filters.media)
+    & ((filters.text) | filters.media)
     & filters.incoming
 )
 async def _(c, m):
