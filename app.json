@@ -1,0 +1,53 @@
+{
+  "name": "screenshot Bot [ 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧ ]",
+  "description": "Telegram auto screenshot bot. Create your Fork now.",
+  "keywords": [
+    "telegram",
+    "best",
+    "screenshot",
+    "bot" 
+  ],
+  "success_url": "https://telegram.com/DS_SC_Generator_Bot",
+  "website": "github.com/Sanchit0102/Screenshot_Generator",
+  "repository": "github.com/Sanchit0102/Screenshot_Generator",
+  "logo": "https://telegra.ph/file/8a5b34b684b753d8cf4c0.jpg",
+  "env": {
+    "AUTH_USERS": {
+      "description": "Bot Auth User Id's With Space",
+      "value": "921365334 563896360 974706111"
+    },
+    "BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": "6389479273:AAEk80xWaYtFPyKQg01tWaU_tHua4retHsg"
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "25833520"
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "7d012a6cbfabc2d0436d7a09d8362af7"
+    },
+    "DATABASE_URL": {
+      "description": "Your Mongodb URL",
+      "value": "mongodb+srv://trumbot:trumbot@cluster0.cfkaeno.mongodb.net/?retryWrites=true&w=majority", 
+      "required": true 
+    },
+    "LOG_CHANNEL": {
+      "description": "Your Log Channel Id, (-100xxxxxxx)",
+      "value": "-1002016803498"
+    }        
+    
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
