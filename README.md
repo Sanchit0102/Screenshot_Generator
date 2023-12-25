@@ -4,7 +4,7 @@
 
 ### Deploy :
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sanchit0102/Screenshot_Generator)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sanchit0102/Screenshot_Generator/blob/develop)
 <br>
 
 ## Description
